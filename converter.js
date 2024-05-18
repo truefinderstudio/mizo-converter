@@ -15,9 +15,8 @@ function NCRToUnicode(input) {
 
 function convertText(input) {
     // Define your find and replace arrays
-    var find = ["&#92;", "&#124;", "&#62;"
-]; // Placeholder: Fill with actual patterns
-    var replace = ["&#7789;", "&#7788;", "&#234;"]; // Placeholder: Fill with actual replacements
+    var find = ["&#92;", "&#124;", "&#62;", "&#96;"]; // Placeholder: Fill with actual patterns
+    var replace = ["&#7789;", "&#7788;", "&#234;", "&#8377;"]; // Placeholder: Fill with actual replacements
     for (var i = 0; i < find.length; i++) {
         var regex = new RegExp(find[i], "g");
         input = input.replace(regex, replace[i]);
